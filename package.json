@@ -1,0 +1,23 @@
+{
+  "name": "packageName",
+  "version": "1.0.0",
+  "description": "Creates filtered version of periodic table",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "files": ["dist/**.*"],
+  "type": "module",
+  "scripts": {
+    "createElements": "node --experimental-modules --experimental-specifier-resolution=node --experimental-json-modules src/createPeriodicTable.js",
+    "clean": "shx rm -rf dist && mkdir dist && shx rm -f src/periodicElements.json",
+    "copyTypings": "shx cp src/main.d.ts dist/main.d.ts",
+    "prepublishOnly": "npm run clean && npm run createElements && npm run buildRollup && npm run copyTypings",
+    "buildRollup": "rollup -c rollup.config.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.0.2",
+    "node-fetch": "^2.6.0",
+    "rollup": "^2.6.1",
+    "shx": "^0.3.2"
+  }
+}
