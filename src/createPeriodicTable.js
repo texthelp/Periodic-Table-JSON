@@ -37,6 +37,10 @@ const getFilteredData = element => {
         category: element.category,
         number: element.number,
         symbol: element.symbol,
+        atomicMass: element.atomic_mass,
+        electronAfinity: element.electron_affinity,
+        electronegativity: element.electronegativity_pauling,
+        firstIonizationEnergy: element.ionization_energies.length ? element.ionization_energies[0] : null,
         xpos: element.xpos,
         ypos: element.ypos,
         source: element.source

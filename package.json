@@ -1,10 +1,12 @@
 {
-  "name": "packageName",
-  "version": "1.0.0",
+  "name": "packagename",
+  "version": "1.1.0",
   "description": "Creates filtered version of periodic table",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
-  "files": ["dist/**.*"],
+  "files": [
+    "dist/**.*"
+  ],
   "type": "module",
   "scripts": {
     "createElements": "node --experimental-modules --experimental-specifier-resolution=node --experimental-json-modules src/createPeriodicTable.js",

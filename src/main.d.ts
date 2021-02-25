@@ -6,6 +6,10 @@ declare var jsonElements: {
     xpos: number;
     ypos: number;
     source: string;
+    atomicMass: number;
+    firstIonizationEnergy: number | null;
+    electronAfinity: number | null,
+    electronegativity: number | null,
     locales: {
         fr: {
             name: string;
