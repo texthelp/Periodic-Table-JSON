@@ -71,9 +71,11 @@ const getLocalData = async (ele) => {
     const endPoint = ele.source.split("/").pop();
     const frData = await getWikiLocale(endPoint, "fr");
     const esData = await getWikiLocale(endPoint, "es");
+    const itData = await getWikiLocale(endPoint, "it");
     const locales = {
         fr: frData,
-        es: esData
+        es: esData,
+        it: itData
     }
     return locales;
 }

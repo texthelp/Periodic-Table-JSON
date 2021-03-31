@@ -1,6 +1,6 @@
 {
   "name": "packagename",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Creates filtered version of periodic table",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",

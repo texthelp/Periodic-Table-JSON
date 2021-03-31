@@ -19,6 +19,10 @@ declare var jsonElements: {
             name: string;
             source: string;
         };
+        it: {
+            name: string;
+            source: string;
+        };
     };
 }[];
 export default jsonElements;
